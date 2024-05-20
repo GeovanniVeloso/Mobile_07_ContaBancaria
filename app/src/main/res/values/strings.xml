@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mobile_07_ContaBancaria</string>
+    <string name="conta1">Conta Poupança</string>
+    <string name="conta2">Conta Especial</string>
+    <string name="sacar">Sacar</string>
+    <string name="depositar">Depositar</string>
+    <string name="render">Render</string>
+    <string name="hint1">Digite o nome do cliente</string>
+    <string name="hint2">Digite o valor para OP</string>
+    <string name="Executar">Executar</string>
+</resources>

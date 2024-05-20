@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="378dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003">
+
+        <RadioButton
+            android:id="@+id/RBP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/conta1" />
+
+        <RadioButton
+            android:id="@+id/RBE"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/conta2" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et01"
+        android:layout_width="210dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="@string/hint1"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/et02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et02"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="368dp"
+        android:ems="10"
+        android:hint="@string/hint2"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:layout_width="160dp"
+        android:layout_height="143dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/RBSacar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sacar" />
+
+        <RadioButton
+            android:id="@+id/RBDepositar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/depositar" />
+
+        <RadioButton
+            android:id="@+id/RBRender"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/render" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/BTExec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="113dp"
+        android:text="@string/Executar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et02"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTExec"
+        app:layout_constraintVertical_bias="0.18" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
